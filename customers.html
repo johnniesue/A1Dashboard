@@ -6,36 +6,131 @@
     <title>Customers - A-1 Affordable Plumbing</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Add your specific in-page CSS here if needed -->
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 48px auto 0 auto;
+            padding: 32px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+        .page-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .page-actions {
+            display: flex;
+            gap: 16px;
+        }
+        .search-bar {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            width: 250px;
+        }
+        .btn {
+            padding: 8px 20px;
+            border-radius: 6px;
+            border: none;
+            background: #007AFF;
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn.secondary {
+            background: #eee;
+            color: #222;
+        }
+        .customers-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .customers-table th, .customers-table td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #f0f0f0;
+            text-align: left;
+            font-size: 1rem;
+        }
+        .customers-table th {
+            background: #f9f9f9;
+            font-weight: 600;
+            color: #444;
+        }
+        .customers-table tr:hover td {
+            background: #f2f8ff;
+        }
+        .checkbox-cell {
+            width: 32px;
+        }
+    </style>
 </head>
 <body>
     <!-- Top navigation bar -->
     <nav class="topbar">
-        <div class="logo-title">
-            <img src="assets/logo.png" alt="A-1 Affordable Logo" class="logo">
-            <span class="brand">A-1 Affordable Plumbing</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="customers.html" class="active">Customers</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="estimates.html">Estimates</a></li>
-            <li><a href="invoices.html">Invoices</a></li>
-            <li><a href="reporting.html">Reporting</a></li>
-            <li><a href="marketing.html">Marketing</a></li>
-        </ul>
-        <div class="topbar-right">
-            <input type="text" placeholder="Search" class="search">
-            <button class="new-btn"><i class="fas fa-plus"></i> New</button>
-            <img src="assets/avatar.png" alt="User Avatar" class="avatar">
-        </div>
+        <!-- ...nav bar code from previous answers... -->
     </nav>
 
-    <!-- Page content here -->
-    <main class="dashboard-content">
-        <h1>Customers</h1>
-        <!-- Add your customers dashboard content here -->
-    </main>
+    <div class="main-content">
+        <div class="page-header">
+            <span class="page-title">All Customers</span>
+            <div class="page-actions">
+                <input type="text" class="search-bar" placeholder="Search customers">
+                <button class="btn secondary">Edit columns</button>
+                <button class="btn secondary">Filter</button>
+                <button class="btn">Create customer</button>
+                <button class="btn secondary">Actions</button>
+            </div>
+        </div>
+        <table class="customers-table">
+            <thead>
+                <tr>
+                    <th class="checkbox-cell"><input type="checkbox"></th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Company</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Home</th>
+                    <th>Work</th>
+                    <th>Email</th>
+                    <th>Customer type</th>
+                    <th>Lead source</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>Santhamma</td>
+                    <td>Nair</td>
+                    <td>A-1 Affordable Plumbing Services LLC</td>
+                    <td>4057 Newport Drive<br>The Colony, TX 75056</td>
+                    <td>(972) 979-9020</td>
+                    <td></td>
+                    <td>(469) 49-9171</td>
+                    <td>beena.nair789@gmail.com</td>
+                    <td>Homeowner</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Add more customer rows here as needed -->
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
