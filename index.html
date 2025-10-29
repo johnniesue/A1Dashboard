@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A-1 Affordable Plumbing Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <nav class="topbar">
+        <div class="logo-title">
+            <img src="assets/logo.png" alt="A-1 Affordable Logo" class="logo">
+            <span class="brand">A-1 Affordable Plumbing</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="customers.html">Customers</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="estimates.html">Estimates</a></li>
+            <li><a href="invoices.html">Invoices</a></li>
+            <li><a href="reporting.html">Reporting</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+        </ul>
+        <div class="topbar-right">
+            <input type="text" placeholder="Search" class="search">
+            <button class="new-btn"><i class="fas fa-plus"></i> New</button>
+            <img src="assets/avatar.png" alt="User Avatar" class="avatar">
+        </div>
+    </nav>
+
+    <main class="dashboard-content">
+        <!-- Summary cards -->
+        <section class="summary-cards">
+            <div class="card estimates">
+                <div class="card-title"><i class="fas fa-file-invoice-dollar"></i> Estimates</div>
+                <div class="card-value">70 Open estimates</div>
+                <div class="card-amount">$17,397.57</div>
+                <a href="estimates.html" class="card-link">View all estimates</a>
+            </div>
+            <div class="card jobs">
+                <div class="card-title"><i class="fas fa-briefcase"></i> Jobs</div>
+                <div class="card-value">277 Unscheduled jobs</div>
+                <div class="card-amount">$271,160.00</div>
+                <a href="jobs.html" class="card-link">View all jobs</a>
+            </div>
+            <div class="card invoices">
+                <div class="card-title"><i class="fas fa-file-invoice"></i> Invoices</div>
+                <div class="card-value">36 Open invoices</div>
+                <div class="card-amount">$4,021.66</div>
+                <a href="invoices.html" class="card-link">View all invoices</a>
+            </div>
+        </section>
+
+        <!-- Week to date metrics -->
+        <section class="week-metrics">
+            <div class="metric">
+                <div class="metric-label">Job Revenue Earned</div>
+                <div class="metric-value">$654 <span class="metric-trend up">+54%</span></div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Jobs Completed</div>
+                <div class="metric-value">2 <span class="metric-trend up">+100%</span></div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Average Job Size</div>
+                <div class="metric-value">$327 <span class="metric-trend down">-32%</span></div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Total New Jobs Booked</div>
+                <div class="metric-value">$454 <span class="metric-trend down">-34%</span></div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">New Jobs Booked Online</div>
+                <div class="metric-value">0</div>
+            </div>
+            <div class="metric-link">
+                <a href="reporting.html">View all reports</a>
+            </div>
+        </section>
+
+        <!-- Employee status and map -->
+        <section class="employee-status-map">
+            <div class="employee-list">
+                <h3>Employee Status</h3>
+                <div class="employee">
+                    <span class="avatar cc">CC</span>
+                    <span class="name">Chris Crabtree</span>
+                    <span class="job-time">9:00am - 11:00pm</span>
+                    <span class="job-customer">Texas Elite Property</span>
+                    <span class="job-id">Job 2572</span>
+                </div>
+                <div class="employee">
+                    <span class="avatar sc">SC</span>
+                    <span class="name">Stephen Collins</span>
+                    <span class="job-time">2:00pm - 4:00pm</span>
+                    <span class="job-customer">Bob Buban</span>
+                    <span class="job-id">Job 2569</span>
+                </div>
+                <!-- Add more employees/jobs as needed -->
+            </div>
+            <div class="map">
+                <!-- Replace with interactive map as needed -->
+                <img src="assets/map-placeholder.png" alt="Map of jobs" class="map-img">
+            </div>
+        </section>
+
+        <!-- Recent activity -->
+        <section class="recent-activity">
+            <h3>Recent activity</h3>
+            <ul>
+                <li>Job on my way (Tue, Oct 28 at 2:36 PM) <span>Job #2569</span></li>
+                <li>Job scheduled SMS sent to (972) 468-8254 (Tue, Oct 28 at 12:39 PM) <span>Job #2571</span></li>
+                <li>Job scheduled email sent to officemanager@texelpm.com (Tue, Oct 28 at 12:39 PM) <span>Job #2571</span></li>
+            </ul>
+        </section>
+
+        <!-- Schedule -->
+        <section class="schedule">
+            <h3>Schedule</h3>
+            <ul>
+                <li>9:00pm - 11:00pm Job 2572 • Texas Elite Property <span>Chris Crabtree, Johnnie Caldwell</span></li>
+                <li>10:00am - 12:00pm Job 2565 • Barbara Wentworth <span>Chris Crabtree, Johnnie Caldwell</span></li>
+                <li>12:00pm - 2:00pm Job 2571 • Texas Elite Property</li>
+                <li>2:00pm - 4:00pm Job 2569 • Bob Buban</li>
+            </ul>
+            <a href="schedule.html" class="view-schedule-link">View schedule</a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
